@@ -1,0 +1,26 @@
+{
+  "name": "node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": " parcel src/*.html",
+    "build": "parcel build src/*.html --public-url/node/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Veronika2007931/Node.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Veronika2007931/Node/issues"
+  },
+  "homepage": "https://github.com/Veronika2007931/Node#readme",
+  "dependencies": {
+    "chart.js": "^4.3.0",
+    "parcel": "^2.9.3",
+    "parcel-bundler": "^1.12.5",
+    "pnotify": "^5.2.0"
+  }
+}
