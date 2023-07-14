@@ -12,22 +12,25 @@ div.append(heading)
  
 const keys = ['a','f','b','s','m','j','t','c','o','q'] 
  
-const scores = document.createElement("h4"); 
-scores.textContent = 0 
-div.append(scores) 
+// const scores = document.createElement("h4"); 
+// scores.textContent = 0 
+// div.append(scores) 
  
 const text = document.getElementById('key') 
  
 let currentKeyIndex = Math.floor(Math.random() * keys.length) 
  
 text.textContent = keys[currentKeyIndex] 
- 
-document.addEventListener("keydown", onKeyDown) 
+// console.log('hello') 
+
+window.addEventListener("keydown", (event)=>{
+    console.log('hello')
+}) 
  
 function onKeyDown(event){ 
+    console.log(event.key)
     if (event.key === keys[currentKeyIndex]) { 
         currentKeyIndex += 1 
-        scores.textContent = scores.textContent += 1 
         text.textContent = keys[currentKeyIndex] 
     } else{ 
         error({ 
